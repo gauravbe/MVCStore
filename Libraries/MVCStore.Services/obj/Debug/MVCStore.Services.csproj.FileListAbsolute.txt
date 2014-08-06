@@ -1,0 +1,10 @@
+C:\Technical\MVCStore\MVCStore.Services\bin\Debug\MVCStore.Services.dll
+C:\Technical\MVCStore\MVCStore.Services\bin\Debug\MVCStore.Services.pdb
+C:\Technical\MVCStore\MVCStore.Services\obj\Debug\MVCStore.Services.csprojResolveAssemblyReference.cache
+C:\Technical\MVCStore\MVCStore.Services\obj\Debug\MVCStore.Services.dll
+C:\Technical\MVCStore\MVCStore.Services\obj\Debug\MVCStore.Services.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Services.dll
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Services.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.csprojResolveAssemblyReference.cache
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.dll
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.pdb
