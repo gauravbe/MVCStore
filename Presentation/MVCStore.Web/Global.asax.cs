@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using MVCStore.Core.IOC;
 
 namespace MVCStore
 {
@@ -15,6 +16,8 @@ namespace MVCStore
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            DependencyResolver.SetResolver(new NinjectDependencyResolver());
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
