@@ -8,3 +8,8 @@ C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Data.p
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\obj\Debug\MVCStore.Data.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\obj\Debug\MVCStore.Data.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\obj\Debug\MVCStore.Data.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Data.dll.config
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.dll
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.xml
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.SqlServer.xml

@@ -3,3 +3,8 @@ C:\Technical\MVCStore\MVCStore.Plugin.Payments.CheckMoneyOrder\bin\Debug\MVCStor
 C:\Technical\MVCStore\MVCStore.Plugin.Payments.CheckMoneyOrder\obj\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore.Plugin.Payments.CheckMoneyOrder\obj\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.dll
 C:\Technical\MVCStore\MVCStore.Plugin.Payments.CheckMoneyOrder\obj\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.pdb
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CheckMoneyOrder\bin\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.dll
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CheckMoneyOrder\bin\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.pdb
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CheckMoneyOrder\obj\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.csprojResolveAssemblyReference.cache
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CheckMoneyOrder\obj\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.dll
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CheckMoneyOrder\obj\Debug\MVCStore.Plugin.Payments.CheckMoneyOrder.pdb

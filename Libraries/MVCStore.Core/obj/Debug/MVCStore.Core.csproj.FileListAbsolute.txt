@@ -13,3 +13,5 @@ C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Core.p
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\Ninject.dll
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\Ninject.xml

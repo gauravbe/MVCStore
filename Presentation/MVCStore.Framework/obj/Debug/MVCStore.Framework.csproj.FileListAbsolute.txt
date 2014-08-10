@@ -3,3 +3,8 @@ C:\Technical\MVCStore\MVCStore.Framework\bin\Debug\MVCStore.Framework.pdb
 C:\Technical\MVCStore\MVCStore.Framework\obj\Debug\MVCStore.Framework.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore.Framework\obj\Debug\MVCStore.Framework.dll
 C:\Technical\MVCStore\MVCStore.Framework\obj\Debug\MVCStore.Framework.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\bin\Debug\MVCStore.Framework.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\bin\Debug\MVCStore.Framework.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\obj\Debug\MVCStore.Framework.csprojResolveAssemblyReference.cache
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\obj\Debug\MVCStore.Framework.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\obj\Debug\MVCStore.Framework.pdb

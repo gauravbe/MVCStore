@@ -101,12 +101,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Presentation\MVCStore.Admin\MVCStore.Admin.csproj">
-      <Project>{F2AE0107-C834-415D-94DD-E23C278DE7A7}</Project>
-      <Name>MVCStore.Admin</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
