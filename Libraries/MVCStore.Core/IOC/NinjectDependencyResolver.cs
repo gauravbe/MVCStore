@@ -4,6 +4,9 @@ using System.Web.Mvc;
 using Ninject;
 using Ninject.Parameters;
 using Ninject.Syntax;
+using MVCStore.Data.Entities;
+using MVCStore.Data.Contract;
+using MVCStore.Data.Repository;
 
 namespace MVCStore.Core.IOC
 {
@@ -30,7 +33,7 @@ namespace MVCStore.Core.IOC
         private void AddBindings()
         {
             //Add bindings sample .Bind<Interface>().To<Class>()
-            //kernel.Bind<>().To<>();
+            kernel.Bind<IProductRepository>().To<ProductRepository>();
         }
     }
 

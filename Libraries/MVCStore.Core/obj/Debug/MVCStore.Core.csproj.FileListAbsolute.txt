@@ -15,3 +15,14 @@ C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.d
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.pdb
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\Ninject.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\Ninject.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Core.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Core.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Data.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\Ninject.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\EntityFramework.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Data.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\Ninject.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\EntityFramework.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.csprojResolveAssemblyReference.cache
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.pdb

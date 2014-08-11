@@ -13,3 +13,13 @@ C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.xml
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Data.dll.config
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Data.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Data.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\obj\Debug\MVCStore.Data.csprojResolveAssemblyReference.cache
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\obj\Debug\MVCStore.Data.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\obj\Debug\MVCStore.Data.pdb
