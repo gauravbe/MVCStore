@@ -87,3 +87,9 @@ C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\obj\Debug\MVCStore.Web.csprojResolveAssemblyReference.cache
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\obj\Debug\MVCStore.Web.dll
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\obj\Debug\MVCStore.Web.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Data.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.Auth.AspNetMembership.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Data.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.xml
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.Auth.AspNetMembership.pdb

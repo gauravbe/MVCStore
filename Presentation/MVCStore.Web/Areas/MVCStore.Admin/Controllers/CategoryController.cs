@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace MVCStore.Admin.Controllers
 {
+    [Authorize]
     public class CategoryController : Controller
     {
         //

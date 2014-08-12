@@ -1,0 +1,9 @@
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\obj\Debug\MVCStore.Plugin.Auth.AspNetMembership.csprojResolveAssemblyReference.cache
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\bin\Debug\MVCStore.Plugin.Auth.AspNetMembership.dll
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\bin\Debug\MVCStore.Plugin.Auth.AspNetMembership.pdb
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\bin\Debug\MVCStore.Core.dll
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\bin\Debug\Ninject.dll
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\bin\Debug\MVCStore.Core.pdb
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\bin\Debug\Ninject.xml
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\obj\Debug\MVCStore.Plugin.Auth.AspNetMembership.dll
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.Auth.AspNetMembership\obj\Debug\MVCStore.Plugin.Auth.AspNetMembership.pdb
