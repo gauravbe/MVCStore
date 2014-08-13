@@ -1,0 +1,7 @@
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Plugin.IOC.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Plugin.IOC.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\bin\Debug\Ninject.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\bin\Debug\Ninject.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.csprojResolveAssemblyReference.cache
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.pdb

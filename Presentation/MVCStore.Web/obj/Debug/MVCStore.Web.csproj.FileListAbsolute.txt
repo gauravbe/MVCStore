@@ -93,3 +93,7 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.Aut
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Data.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.xml
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.Auth.AspNetMembership.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.Auth.AspNetMembership.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.Auth.AspNetMembership.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.IOC.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.IOC.pdb

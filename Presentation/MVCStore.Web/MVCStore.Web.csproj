@@ -144,6 +144,10 @@
       <Project>{4435922e-c6f4-42ae-a6ac-c1161e30c4be}</Project>
       <Name>MVCStore.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\MVCStore.Plugin.IOC\MVCStore.Plugin.IOC.csproj">
+      <Project>{008d77f0-2a1e-4f46-a44d-d72427734cce}</Project>
+      <Name>MVCStore.Plugin.IOC</Name>
+    </ProjectReference>
     <ProjectReference Include="Areas\MVCStore.Admin\MVCStore.Admin.csproj">
       <Project>{7ddf11d8-5582-44f0-be72-a0759f05cab1}</Project>
       <Name>MVCStore.Admin</Name>

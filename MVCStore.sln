@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCStore.Admin", "Presentat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCStore.Plugin.Auth.AspNetMembership", "MVCStore.Plugin.Auth.AspNetMembership\MVCStore.Plugin.Auth.AspNetMembership.csproj", "{9ECB545A-12F8-4943-B2F2-EE1597A2C08B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCStore.Plugin.IOC", "MVCStore.Plugin.IOC\MVCStore.Plugin.IOC.csproj", "{008D77F0-2A1E-4F46-A44D-D72427734CCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{9ECB545A-12F8-4943-B2F2-EE1597A2C08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ECB545A-12F8-4943-B2F2-EE1597A2C08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ECB545A-12F8-4943-B2F2-EE1597A2C08B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008D77F0-2A1E-4F46-A44D-D72427734CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008D77F0-2A1E-4F46-A44D-D72427734CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008D77F0-2A1E-4F46-A44D-D72427734CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008D77F0-2A1E-4F46-A44D-D72427734CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,5 +117,6 @@ Global
 		{3EE2B19C-69F0-42F9-B061-E1868DF41A83} = {7FAA944B-2F3B-4B40-AE66-1FF796E3070A}
 		{0CA63BD0-5B57-4B6D-AC91-8998637AD29E} = {7FAA944B-2F3B-4B40-AE66-1FF796E3070A}
 		{9ECB545A-12F8-4943-B2F2-EE1597A2C08B} = {7FAA944B-2F3B-4B40-AE66-1FF796E3070A}
+		{008D77F0-2A1E-4F46-A44D-D72427734CCE} = {7FAA944B-2F3B-4B40-AE66-1FF796E3070A}
 	EndGlobalSection
 EndGlobal

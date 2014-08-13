@@ -29,3 +29,7 @@ C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\Ninject.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Plugin.Auth.AspNetMembership.pdb
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Core.pdb
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Data\bin\Debug\Ninject.xml
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Core.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Plugin.Auth.AspNetMembership.dll
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Plugin.Auth.AspNetMembership.pdb
+C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Data\bin\Debug\MVCStore.Core.pdb
