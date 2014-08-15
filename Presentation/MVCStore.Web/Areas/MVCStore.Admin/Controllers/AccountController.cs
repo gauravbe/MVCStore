@@ -6,12 +6,20 @@ using System.Web.Mvc;
 using MVCStore.Admin.Models;
 using MVCStore.Data.Repository;
 using System.Web.Security;
+using MVCStore.Services;
+using MVCStore.Services.Authentication;
 
 namespace MVCStore.Admin.Controllers
 {
     [Authorize]
     public class AccountController : Controller
     {
+        private readonly IAuthenticationService _authenticationService;
+        public AccountController(IAuthenticationService authenticationService)
+        {
+            this._authenticationService = authenticationService;
+        }
+
         //
         // GET: /Admin/
 
@@ -28,9 +36,8 @@ namespace MVCStore.Admin.Controllers
         public ActionResult Login(LoginModel loginModel, string returnUrl)
         {
             if (ModelState.IsValid)
-            {
-                UserRepository userRepository = new UserRepository();
-                if (userRepository.ValidateUser(loginModel.UserName, loginModel.Password))
+            {               
+                if (_authenticationService.ValidateUser(loginModel.UserName, loginModel.Password))
                 {
                     FormsAuthentication.RedirectFromLoginPage(loginModel.UserName, true);
                     //return RedirectToLocal(returnUrl);

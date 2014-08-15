@@ -5,6 +5,5 @@ C:\Technical\MVCStore\MVCStore.Plugin.Payments.CashOnDelivery\obj\Debug\MVCStore
 C:\Technical\MVCStore\MVCStore.Plugin.Payments.CashOnDelivery\obj\Debug\MVCStore.Plugin.Payments.CashOnDelivery.pdb
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CashOnDelivery\bin\Debug\MVCStore.Plugin.Payments.CashOnDelivery.dll
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CashOnDelivery\bin\Debug\MVCStore.Plugin.Payments.CashOnDelivery.pdb
-C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CashOnDelivery\obj\Debug\MVCStore.Plugin.Payments.CashOnDelivery.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CashOnDelivery\obj\Debug\MVCStore.Plugin.Payments.CashOnDelivery.dll
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Payments.CashOnDelivery\obj\Debug\MVCStore.Plugin.Payments.CashOnDelivery.pdb

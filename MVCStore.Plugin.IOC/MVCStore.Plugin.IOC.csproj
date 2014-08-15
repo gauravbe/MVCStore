@@ -49,6 +49,20 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\MVCStore.Core\MVCStore.Core.csproj">
+      <Project>{4435922e-c6f4-42ae-a6ac-c1161e30c4be}</Project>
+      <Name>MVCStore.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\MVCStore.Data\MVCStore.Data.csproj">
+      <Project>{69b22b18-dfdc-430d-a753-3bb621ea2876}</Project>
+      <Name>MVCStore.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\MVCStore.Services\MVCStore.Services.csproj">
+      <Project>{b829fe87-e827-4c4b-8282-4abe2d0737cc}</Project>
+      <Name>MVCStore.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

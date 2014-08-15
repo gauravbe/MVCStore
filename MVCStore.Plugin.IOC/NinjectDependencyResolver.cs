@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using MVCStore.Services.Authentication;
 using Ninject;
 using Ninject.Parameters;
 using Ninject.Syntax;
+using MVCStore.Services;
+using MVCStore.Data;
+using MVCStore.Core.Authentication;
 
 
 namespace MVCStore.Plugin.IOC
@@ -32,6 +36,8 @@ namespace MVCStore.Plugin.IOC
         {
             //Add bindings sample .Bind<Interface>().To<Class>()
             //kernel.Bind<IProductRepository>().To<ProductRepository>();
+            kernel.Bind<IAuthenticationService>().To<AspNetAuthenticationService>();
+            kernel.Bind<IMembership>().To<AspNetMembershipRepository>();
         }
     }
 }
