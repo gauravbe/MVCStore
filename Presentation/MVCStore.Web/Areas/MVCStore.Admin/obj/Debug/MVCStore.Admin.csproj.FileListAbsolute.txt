@@ -66,3 +66,8 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bi
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\obj\Debug\MVCStore.Admin.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\obj\Debug\MVCStore.Admin.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\obj\Debug\MVCStore.Admin.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\Antlr3.Runtime.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\System.Web.Optimization.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\WebGrease.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\Antlr3.Runtime.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\System.Web.Optimization.xml
