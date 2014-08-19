@@ -5,6 +5,7 @@ C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\bin\Debug\Ninject.xml
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.csprojResolveAssemblyReference.cache
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.dll
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.pdb
+C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Plugin.IOC.dll
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Plugin.IOC.pdb
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Core.dll
@@ -17,6 +18,5 @@ C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Data.pdb
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\MVCStore.Services.pdb
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\Ninject.xml
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\bin\Debug\EntityFramework.xml
-C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.dll
 C:\Technical\MVCStore\MVCStore\MVCStore.Plugin.IOC\obj\Debug\MVCStore.Plugin.IOC.pdb

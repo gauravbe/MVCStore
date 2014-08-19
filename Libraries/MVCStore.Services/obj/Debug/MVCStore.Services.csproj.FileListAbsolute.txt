@@ -3,6 +3,7 @@ C:\Technical\MVCStore\MVCStore.Services\bin\Debug\MVCStore.Services.pdb
 C:\Technical\MVCStore\MVCStore.Services\obj\Debug\MVCStore.Services.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore.Services\obj\Debug\MVCStore.Services.dll
 C:\Technical\MVCStore\MVCStore.Services\obj\Debug\MVCStore.Services.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Services.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Services.pdb
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Core.dll
@@ -11,6 +12,5 @@ C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\EntityFrame
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Core.pdb
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\MVCStore.Data.pdb
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\bin\Debug\EntityFramework.xml
-C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Services\obj\Debug\MVCStore.Services.pdb

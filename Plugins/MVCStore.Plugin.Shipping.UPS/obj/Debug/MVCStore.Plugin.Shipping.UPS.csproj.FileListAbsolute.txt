@@ -4,5 +4,6 @@ C:\Technical\MVCStore\MVCStore.Plugin.Shipping.UPS\obj\Debug\MVCStore.Plugin.Shi
 C:\Technical\MVCStore\MVCStore.Plugin.Shipping.UPS\obj\Debug\MVCStore.Plugin.Shipping.UPS.pdb
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.UPS\bin\Debug\MVCStore.Plugin.Shipping.UPS.dll
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.UPS\bin\Debug\MVCStore.Plugin.Shipping.UPS.pdb
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.UPS\obj\Debug\MVCStore.Plugin.Shipping.UPS.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.UPS\obj\Debug\MVCStore.Plugin.Shipping.UPS.dll
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.UPS\obj\Debug\MVCStore.Plugin.Shipping.UPS.pdb

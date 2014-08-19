@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MVCStore.Data.Entities;
+using MVCStore.Services.Catalog;
 
 namespace MVCStore.Admin.Controllers
 {
@@ -11,10 +13,26 @@ namespace MVCStore.Admin.Controllers
     {
         //
         // GET: /Category/
+        private readonly ICategoryService _categoryService;
+        public CategoryController(ICategoryService categoryService)
+        {
+            this._categoryService = categoryService;
+        }
+      
 
         public ActionResult Index()
         {
             return View();
+        }
+
+         [HttpPost]
+        public ActionResult Add(Category model)
+        {
+             if (ModelState.IsValid)
+             {
+                 _categoryService.SaveCategory(model);
+             }
+             return null;
         }
 
     }

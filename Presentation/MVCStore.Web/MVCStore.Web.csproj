@@ -44,6 +44,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -176,6 +183,10 @@
     <ProjectReference Include="..\..\Libraries\MVCStore.Core\MVCStore.Core.csproj">
       <Project>{4435922e-c6f4-42ae-a6ac-c1161e30c4be}</Project>
       <Name>MVCStore.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\MVCStore.Data\MVCStore.Data.csproj">
+      <Project>{69b22b18-dfdc-430d-a753-3bb621ea2876}</Project>
+      <Name>MVCStore.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\MVCStore.Plugin.IOC\MVCStore.Plugin.IOC.csproj">
       <Project>{008d77f0-2a1e-4f46-a44d-d72427734cce}</Project>

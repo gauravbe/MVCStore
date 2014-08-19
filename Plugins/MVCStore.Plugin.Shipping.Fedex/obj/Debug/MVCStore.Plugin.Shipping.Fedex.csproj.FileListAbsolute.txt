@@ -4,5 +4,6 @@ C:\Technical\MVCStore\MVCStore.Plugin.Shipping.Fedex\obj\Debug\MVCStore.Plugin.S
 C:\Technical\MVCStore\MVCStore.Plugin.Shipping.Fedex\obj\Debug\MVCStore.Plugin.Shipping.Fedex.pdb
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.Fedex\bin\Debug\MVCStore.Plugin.Shipping.Fedex.dll
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.Fedex\bin\Debug\MVCStore.Plugin.Shipping.Fedex.pdb
+C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.Fedex\obj\Debug\MVCStore.Plugin.Shipping.Fedex.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.Fedex\obj\Debug\MVCStore.Plugin.Shipping.Fedex.dll
 C:\Technical\MVCStore\MVCStore\Plugins\MVCStore.Plugin.Shipping.Fedex\obj\Debug\MVCStore.Plugin.Shipping.Fedex.pdb

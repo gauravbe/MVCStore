@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using MVCStore.Admin.App_Start;
+using MVCStore.Data.Entities;
 using MVCStore.Plugin.IOC;
 using System.Web.Optimization;
 
@@ -17,6 +19,7 @@ namespace MVCStore.Web
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<AppEntities>(null);
             AreaRegistration.RegisterAllAreas();
 
             DependencyResolver.SetResolver(new NinjectDependencyResolver());

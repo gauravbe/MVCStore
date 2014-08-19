@@ -13,7 +13,10 @@ C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Co
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.csprojResolveAssemblyReference.cache
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.dll
 C:\D_DRIVE\Joaquin\GitHub\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Core.dll.config
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Core.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\MVCStore.Core.pdb
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\bin\Debug\System.Data.Entity.Repository.dll
+C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.dll
 C:\Technical\MVCStore\MVCStore\Libraries\MVCStore.Core\obj\Debug\MVCStore.Core.pdb
