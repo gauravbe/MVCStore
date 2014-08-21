@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcContrib.UI.Grid;
+using MVCStore.Admin.Models;
 using MVCStore.Data.Entities;
 using MVCStore.Services.Catalog;
 
@@ -20,9 +22,23 @@ namespace MVCStore.Admin.Controllers
         }
       
 
-        public ActionResult Index()
+        public ActionResult Index(string searchWord, GridSortOptions gridSortOptions, int? page)
         {
-            return View();
+            //IEnumerable<Category> categories = _categoryService.FetchCategories();
+            //return View(categories);
+
+            var pagedViewModel = new PagedViewModel<Category>
+            {
+                ViewData = ViewData,
+                Query = _categoryService.FetchCategories().AsQueryable(),
+                GridSortOptions = gridSortOptions,
+                DefaultSortColumn = "Name",
+                Page = page,
+                PageSize = 2,
+            }                      
+            .Setup();
+
+            return View(pagedViewModel);
         }
 
          [HttpPost]
@@ -34,6 +50,6 @@ namespace MVCStore.Admin.Controllers
              }
              return null;
         }
-
+        
     }
 }

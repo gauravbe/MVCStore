@@ -1,14 +1,3 @@
-
-/*=============================================================
-    Authour URI: www.binarycart.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
 /*==============================================
     GENERAL  STYLES    
     =============================================*/
@@ -355,7 +344,7 @@ line-height: 1.428571429;
     MEDIA QUERIES     
     =============================================*/
  
- @media(min-width:768px) {
+@media(min-width:768px) {
      #page-wrapper{
                margin: 0 0 0 260px;
         padding: 15px 30px;
@@ -374,6 +363,45 @@ line-height: 1.428571429;
  border-radius: 0px; 
 }
    
+}
+   
+/********************************************
+   MvcContrib Grid Style
+********************************************/ 
+
+.grid-style th
+{
+    border-bottom: 5px solid #8EB50C;
+    background-color: #EDFDCE;
+}
+
+.grid-style .sort_asc
+{
+    background-image: url('../img/arrow_down.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.grid-style .sort_desc
+{
+    background-image: url('../img/arrow_up.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;   
+}
+
+.grid-style .gridrow_alternate
+{
+    background-color: #eee;
+}
+
+.pagination
+{
+    border: 1px solid #8EB50C;
+    padding: 5px;
+    background-color: #EDFDCE;
+    margin: 10px;
 }
 
 

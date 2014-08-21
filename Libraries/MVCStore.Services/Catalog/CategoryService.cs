@@ -21,5 +21,10 @@ namespace MVCStore.Services.Catalog
         {
             _categorRepository.Update(category);
         }
+
+        public IEnumerable<Category> FetchCategories()
+        {
+           return _categorRepository.GetAll();
+        }
     }
 }

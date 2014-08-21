@@ -66,7 +66,6 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\Antlr3.Runtime.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.SqlServer.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\Microsoft.Web.Infrastructure.dll
-C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Admin.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Core.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Data.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.IOC.dll
@@ -87,7 +86,6 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Services.d
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Core.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Data.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Plugin.IOC.pdb
-C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Admin.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\Antlr3.Runtime.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.xml
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\EntityFramework.SqlServer.xml
@@ -107,3 +105,8 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\Ninject.xml
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Services.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\obj\Debug\MVCStore.Web.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\obj\Debug\MVCStore.Web.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Admin.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MVCStore.Admin.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MvcContrib.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\Microsoft.Web.Mvc.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\bin\MvcContrib.xml

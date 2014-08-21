@@ -73,3 +73,6 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bi
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MVCStore.Core.pdb
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\obj\Debug\MVCStore.Admin.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\obj\Debug\MVCStore.Admin.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\Microsoft.Web.Mvc.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MvcContrib.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MvcContrib.xml

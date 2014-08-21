@@ -10,5 +10,6 @@ namespace MVCStore.Services.Catalog
     public interface ICategoryService
     {
         void SaveCategory(Category category);
+        IEnumerable<Category> FetchCategories();
     }
 }
