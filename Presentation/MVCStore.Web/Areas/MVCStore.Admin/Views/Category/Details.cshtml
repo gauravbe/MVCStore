@@ -1,0 +1,32 @@
+﻿@model MVCStore.Data.Entities.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                View Category
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Category Name: </label>
+                            @Model.Name
+                        </div>
+                        <div class="form-group">
+                            <label>Description: </label>
+                            @Model.Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Elements -->
+    </div>
+</div>

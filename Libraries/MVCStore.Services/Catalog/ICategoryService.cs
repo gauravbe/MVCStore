@@ -11,5 +11,7 @@ namespace MVCStore.Services.Catalog
     {
         void SaveCategory(Category category);
         IEnumerable<Category> FetchCategories();
+        Category GetCategory(int id);
+        void Delete(int id);
     }
 }

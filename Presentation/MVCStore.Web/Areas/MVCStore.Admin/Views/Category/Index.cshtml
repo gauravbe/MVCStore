@@ -8,9 +8,29 @@
     Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Category List</h2>
-@{Html.RenderPartial("Pager", Model.PagedList);}
-@Html.Grid(Model.PagedList).Columns(column =>{
-    column.For(x => Html.ActionQueryLink(x.Name, "Details", new { id = x.ID })).Named("Name").InsertAt(0);
-    column.For(x => x.Description);
-}).Sort(Model.GridSortOptions).Attributes(@class => "grid-style")
+<div class="row">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Category List
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">                   
+                    @Html.Grid(Model.PagedList).Columns(column =>
+               {
+                   column.For(x => Html.ActionQueryLink(x.Name, "Details", new { id = x.ID })).Named("Name").InsertAt(0);
+                   column.For(x => x.Description);
+                   column.For(cust => Html.ActionLink("Edit", "Edit", new { id = cust.ID })).Named("Edit").Encode(false);
+                   column.For(cust => Html.ActionLink("delete", "Delete", new { id = cust.ID })).Named("Delete").Encode(false);
+               }).Sort(Model.GridSortOptions).Attributes(@class => "table table-striped")
+                     @{Html.RenderPartial("Pager", Model.PagedList);}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel-body">
+            <a href="@Url.Action("AddCategory", "Category", new { area = "MVCStore.Admin" })" class="btn btn-default btn-sm">Add Category</a>
+        </div>
+    </div>
+</div>

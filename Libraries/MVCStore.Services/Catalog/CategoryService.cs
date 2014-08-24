@@ -8,15 +8,15 @@ using MVCStore.Data.Entities;
 
 namespace MVCStore.Services.Catalog
 {
-    public class CategoryService: ICategoryService
+    public class CategoryService : ICategoryService
     {
-        private readonly IRepository<Category> _categorRepository; 
+        private readonly IRepository<Category> _categorRepository;
 
         public CategoryService(IRepository<Category> categoryRepository)
         {
             this._categorRepository = categoryRepository;
         }
-        
+
         public void SaveCategory(Category category)
         {
             _categorRepository.Update(category);
@@ -24,7 +24,19 @@ namespace MVCStore.Services.Catalog
 
         public IEnumerable<Category> FetchCategories()
         {
-           return _categorRepository.GetAll();
+            return _categorRepository.GetAll();
+        }
+
+
+        public Category GetCategory(int id)
+        {
+            return _categorRepository.GetById(id);
+        }
+
+
+        public void Delete(int id)
+        {
+           _categorRepository.Delete(id);
         }
     }
 }

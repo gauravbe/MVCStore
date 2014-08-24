@@ -93,5 +93,10 @@ namespace MVCStore.Data.Repository
         {
             throw new NotImplementedException();
         }
+
+        public virtual void Delete(int i)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

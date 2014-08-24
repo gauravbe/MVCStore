@@ -15,6 +15,9 @@ namespace MVCStore.Data.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
+        [Required(ErrorMessage = "Please enter Category Name.")]
+        [StringLength(16, ErrorMessage = "Invalid Category Name. Please try again.")]
+        [Display(Name = "Category name")]
         public virtual string Name { get; set; }
 
         public virtual string Description { get; set; }

@@ -24,9 +24,6 @@ namespace MVCStore.Admin.Controllers
 
         public ActionResult Index(string searchWord, GridSortOptions gridSortOptions, int? page)
         {
-            //IEnumerable<Category> categories = _categoryService.FetchCategories();
-            //return View(categories);
-
             var pagedViewModel = new PagedViewModel<Category>
             {
                 ViewData = ViewData,
@@ -41,15 +38,40 @@ namespace MVCStore.Admin.Controllers
             return View(pagedViewModel);
         }
 
-         [HttpPost]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Add(Category model)
         {
-             if (ModelState.IsValid)
-             {
-                 _categoryService.SaveCategory(model);
-             }
-             return null;
+            if (ModelState.IsValid)
+            {
+                _categoryService.SaveCategory(model);
+
+                return RedirectToAction("Index", "Category");                
+            }
+            return View("AddCategory");
         }
         
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+
+        public ActionResult Edit(int id)
+        {
+            Category category = _categoryService.GetCategory(id);
+            return View(category);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            _categoryService.Delete(id);
+            return RedirectToAction("Index", "Category");
+        }
+
+        public ActionResult Details(int id)
+        {
+            Category category = _categoryService.GetCategory(id);
+            return View(category);
+        }
     }
 }

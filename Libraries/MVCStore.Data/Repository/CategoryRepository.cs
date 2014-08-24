@@ -36,7 +36,7 @@ namespace MVCStore.Data.Repository
             DataContext.SaveChanges();
         }
 
-        public Category DeleteCategory(int categoryId)
+        public override void Delete(int categoryId)
         {
             Category dbEntry = DataContext.Categories.Find(categoryId);
             if (dbEntry != null)
@@ -44,7 +44,6 @@ namespace MVCStore.Data.Repository
                 DataContext.Categories.Remove(dbEntry);
                 DataContext.SaveChanges();
             }
-            return dbEntry;
         }
     }
 }
