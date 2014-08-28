@@ -1,28 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MVCStore.Data.Context;
-using MVCStore.Data.Contract;
-
+using System.Text;
+using System.Threading.Tasks;
+using MVCStore.Data.Entities;
 
 namespace MVCStore.Data.Repository
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : RepositoryBase<Product>
     {
-        private EFDbContext context = new EFDbContext();
-        public IQueryable<Entities.Product> Products
+        public ProductRepository(IDatabaseFactory databaseFactory)
+            : base(databaseFactory)
         {
-            get { return context.Products; }
         }
 
-        public void SaveProduct(Entities.Product product)
+        public IQueryable<Product> Products
         {
-            throw new NotImplementedException();
+            get { return DataContext.Products; }
         }
 
-        public Entities.Product DeleteProduct(int productId)
+        public override void Update(Product product)
         {
-            throw new NotImplementedException();
+
+            if (product.ProductID == 0)
+            {
+                DataContext.Products.Add(product);
+            }
+            else
+            {
+                Product dbEntry = DataContext.Products.Find(product.ProductID);
+                if (dbEntry != null)
+                {
+                    dbEntry.Name = product.Name;
+                    dbEntry.Description = product.Description;
+                    dbEntry.CategoryId = product.CategoryId;
+                    dbEntry.Price = product.Price;
+                    dbEntry.ImageData = product.ImageData;
+                }
+            }
+            DataContext.SaveChanges();
+        }
+
+        public override void Delete(int productId)
+        {
+            Product dbEntry = DataContext.Products.Find(productId);
+            if (dbEntry != null)
+            {
+                DataContext.Products.Remove(dbEntry);
+                DataContext.SaveChanges();
+            }
+        }
+
+        public override byte[] GetImageById(int id)
+        {
+            Product dbEntry = DataContext.Products.Find(id);
+            byte[] imageData = dbEntry.ImageData;
+            return imageData;
         }
     }
 }

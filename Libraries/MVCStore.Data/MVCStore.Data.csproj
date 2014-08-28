@@ -55,8 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\EFDBContext.cs" />
-    <Compile Include="Contract\IProductRepository.cs" />
     <Compile Include="Entities\AppEntities.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Product.cs" />

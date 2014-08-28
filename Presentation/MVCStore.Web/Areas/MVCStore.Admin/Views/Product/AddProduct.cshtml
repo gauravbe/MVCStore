@@ -1,0 +1,91 @@
+﻿@model MVCStore.Data.Entities.Product
+
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src="~/Areas/MVCStore.Admin/Contents/ckeditor/ckeditor.js"></script>
+<script src="~/Areas/MVCStore.Admin/Contents/ckeditor/adapters/jquery.js"></script>
+
+<h2>Create New Content With Image</h2>
+
+<script type="text/javascript">
+    function fileCheck(obj) {
+        var fileExtension = ['jpeg', 'jpg', 'png', 'gif', 'bmp'];
+        if ($.inArray($(obj).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+            alert("Only '.jpeg','.jpg', '.png', '.gif', '.bmp' formats are allowed.");
+        }
+    }
+</script>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Add Product
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        @using (Html.BeginForm("Add", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true)
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Content Title" })
+                                        @Html.ValidationMessageFor(model => model.Name)
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Price, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Price, new { @class = "form-control", placeholder = "Price" })
+                                        @Html.ValidationMessageFor(model => model.Price)
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.CategoryId, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.CategoryId, new { @class = "form-control", placeholder = "Category" })
+                                        @Html.ValidationMessageFor(model => model.CategoryId)
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.ImageData, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        <input type="file" name="ImageContent" id="ImageContent" onchange="fileCheck(this);" />
+                                        @Html.ValidationMessageFor(model => model.ImageData)
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextAreaFor(model => model.Description, new { @class = "ckeditor", placeholder = "Content Description" })
+                                        @Html.ValidationMessageFor(model => model.Description)
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Submit" class="btn btn-default" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Elements -->
+    </div>
+</div>

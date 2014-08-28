@@ -1,0 +1,36 @@
+﻿@using MvcContrib.UI.Grid;
+@using MVCStore.Admin.Common
+@model MVCStore.Admin.Models.PagedViewModel<MVCStore.Data.Entities.Product>
+
+
+@{
+    ViewBag.Title = "Product List";
+    Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Product List
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    @Html.Grid(Model.PagedList).Columns(column =>
+                    {
+                        column.For(x => Html.ActionQueryLink(x.Name, "Details", new { id = x.ProductID })).Named("Name").InsertAt(0);
+                        column.For(x => x.Description);
+                        column.For(cust => Html.ActionLink("Edit", "Edit", new { id = cust.ProductID })).Named("Edit").Encode(false);
+                        column.For(cust => Html.ActionLink("delete", "Delete", new { id = cust.ProductID }, new { @class = "confirmDialog" })).Named("Delete").Encode(false);
+                    }).Sort(Model.GridSortOptions).Attributes(@class => "table table-striped")
+                    @{Html.RenderPartial("Pager", Model.PagedList);}
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel-body">
+            <a href="@Url.Action("AddProduct", "Product", new { area = "MVCStore.Admin" })" class="btn btn-default btn-sm">Add Product</a>
+        </div>
+    </div>
+</div>

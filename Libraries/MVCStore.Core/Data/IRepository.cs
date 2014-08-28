@@ -16,5 +16,6 @@ namespace MVCStore.Core.Data
         T Get(Expression<Func<T, bool>> where);
         IEnumerable<T> GetAll();
         IEnumerable<T> GetMany(Expression<Func<T, bool>> where);
+        byte[] GetImageById(int id);
     }
 }

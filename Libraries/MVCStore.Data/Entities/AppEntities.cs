@@ -13,6 +13,8 @@ namespace MVCStore.Data.Entities
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Product> Products { get; set; }
+
         public virtual void Commit()
         {
             base.SaveChanges();

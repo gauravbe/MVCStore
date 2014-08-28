@@ -1,0 +1,44 @@
+﻿@model MVCStore.Data.Entities.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                View Product
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Product Name: </label>
+                            @Model.Name
+                        </div>
+                        <div class="form-group">
+                            <label>Price: </label>
+                            @Model.Price
+                        </div>
+                        <div class="form-group">
+                            <label>Category Name: </label>
+                            @Model.CategoryId
+                        </div>
+                        <div class="form-group">
+                            <label>Image: </label>
+                            <img src="/Admin/Product/RetrieveImage/@Model.ProductID" alt="" height=100 width=200 />
+                        </div>
+                        <div class="form-group">
+                            <label>Description: </label>
+                           @Html.Raw(@Model.Description)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Elements -->
+    </div>
+</div>

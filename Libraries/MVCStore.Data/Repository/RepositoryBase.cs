@@ -5,7 +5,6 @@ using System.Linq.Expressions;
 using System.Data.Entity;
 using System.Data;
 using MVCStore.Core.Data;
-using MVCStore.Data.Context;
 using MVCStore.Data.Entities;
 
 namespace MVCStore.Data.Repository
@@ -95,6 +94,12 @@ namespace MVCStore.Data.Repository
         }
 
         public virtual void Delete(int i)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public virtual byte[] GetImageById(int id)
         {
             throw new NotImplementedException();
         }

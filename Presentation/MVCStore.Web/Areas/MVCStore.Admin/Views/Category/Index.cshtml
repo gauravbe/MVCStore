@@ -8,6 +8,38 @@
     Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".confirmDialog").click(function () {
+            var str = $(this).attr("id").split("_");
+            id = str[1];
+
+            var flag = confirm('Are you sure to delete ??');
+            if (id != "" && flag) {
+                $.ajax({
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    url: '@Url.Action("Delete", "Category")',
+                    data: { "id": id },
+                    dataType: "json",
+                    beforeSend: function () { },
+                    success: function (data) {
+
+                        if (data.result == true) {
+                            $("#Update_" + id).parents("tr").remove();
+                        }
+                        else {
+                            alert('There is some error');
+                        }
+                    }
+
+                });
+            }
+        });
+    });
+</script>
+
 <div class="row">
     <div class="col-md-9 col-sm-12 col-xs-12">
         <div class="panel panel-default">
@@ -15,16 +47,26 @@
                 Category List
             </div>
             <div class="panel-body">
-                <div class="table-responsive">                   
+                <div class="table-responsive">
                     @Html.Grid(Model.PagedList).Columns(column =>
-               {
-                   column.For(x => Html.ActionQueryLink(x.Name, "Details", new { id = x.ID })).Named("Name").InsertAt(0);
-                   column.For(x => x.Description);
-                   column.For(cust => Html.ActionLink("Edit", "Edit", new { id = cust.ID })).Named("Edit").Encode(false);
-                   column.For(cust => Html.ActionLink("delete", "Delete", new { id = cust.ID })).Named("Delete").Encode(false);
-               }).Sort(Model.GridSortOptions).Attributes(@class => "table table-striped")
-                     @{Html.RenderPartial("Pager", Model.PagedList);}
+                    {
+                        column.For(x => Html.ActionQueryLink(x.Name, "Details", new { id = x.ID })).Named("Name").InsertAt(0);
+                        column.For(x => x.Description);
+                        column.For(cust => Html.ActionLink("Edit", "Edit", new { id = cust.ID })).Named("Edit").Encode(false);
+                        column.For(cust => Html.ActionLink("delete", "Delete", new { id = cust.ID }, new { @class = "confirmDialog" })).Named("Delete").Encode(false);
+                    }).Sort(Model.GridSortOptions).Attributes(@class => "table table-striped")
+                    @{Html.RenderPartial("Pager", Model.PagedList);}
                 </div>
+            </div>
+            <div id="dialog-confirm" style="display: none">
+                <p>
+                    <span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>
+                    Are you sure to delete ?
+                </p>
+            </div>
+            <div id="dialog-edit" style="display: none">
+            </div>
+            <div id="dialog-view" style="display: none">
             </div>
         </div>
     </div>

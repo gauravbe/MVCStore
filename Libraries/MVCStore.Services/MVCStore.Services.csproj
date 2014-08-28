@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +43,8 @@
     <Compile Include="Authentication\IAuthenticationService.cs" />
     <Compile Include="Catalog\CategoryService.cs" />
     <Compile Include="Catalog\ICategoryService.cs" />
+    <Compile Include="Catalog\IProductService.cs" />
+    <Compile Include="Catalog\ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Authentication\AspNetAuthenticationService.cs" />
   </ItemGroup>

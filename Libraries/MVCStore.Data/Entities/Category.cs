@@ -21,7 +21,5 @@ namespace MVCStore.Data.Entities
         public virtual string Name { get; set; }
 
         public virtual string Description { get; set; }
-
-        //public virtual ICollection<Product> Products { get; set; }
     }
 }
