@@ -8,3 +8,5 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\bin\Debug\MVCStor
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\obj\Debug\MVCStore.Framework.csprojResolveAssemblyReference.cache
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\obj\Debug\MVCStore.Framework.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\obj\Debug\MVCStore.Framework.pdb
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\bin\Debug\Newtonsoft.Json.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Framework\bin\Debug\Newtonsoft.Json.xml

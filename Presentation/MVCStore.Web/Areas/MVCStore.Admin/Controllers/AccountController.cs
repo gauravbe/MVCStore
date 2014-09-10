@@ -11,7 +11,6 @@ using MVCStore.Services.Authentication;
 
 namespace MVCStore.Admin.Controllers
 {
-    [Authorize]
     public class AccountController : Controller
     {
         private readonly IAuthenticationService _authenticationService;
@@ -35,27 +34,60 @@ namespace MVCStore.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel loginModel, string returnUrl)
         {
-            if (ModelState.IsValid)
-            {               
-                if (_authenticationService.ValidateUser(loginModel.UserName, loginModel.Password))
+            try
+            {
+
+                if (ModelState.IsValid)
                 {
-                    FormsAuthentication.RedirectFromLoginPage(loginModel.UserName, true);
-                    //return RedirectToLocal(returnUrl);
+                    if (_authenticationService.ValidateUser(loginModel.UserName, loginModel.Password))
+                    {
+                        FormsAuthentication.SetAuthCookie(loginModel.UserName, loginModel.RememberMe);
+                        //FormsAuthentication.RedirectFromLoginPage(loginModel.UserName, true);
+
+                        string redirectUrl = FormsAuthentication.GetRedirectUrl(loginModel.UserName, loginModel.RememberMe);
+
+                        if (!string.IsNullOrWhiteSpace(redirectUrl))
+                        {
+                            Response.Redirect(redirectUrl);
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index", "Dashboard");
+                        }
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid email or password. Please try again.");
+                    }
                 }
+
             }
-            return null;
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred during login. Please try again.");
+            }
+
+            return View(loginModel);
         }
 
-        private ActionResult RedirectToLocal(string returnUrl)
+        
+        public ViewResult ForgotPassword()
         {
-            if (Url.IsLocalUrl(returnUrl))
-            {
-                return Redirect(returnUrl);
-            }
-            else
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            return View();
         }
+
+        public ActionResult LogOff()
+        {
+            LogoutUser();
+            return RedirectToAction("Login", "Account");
+        }
+
+        private void LogoutUser()
+        {
+            FormsAuthentication.SignOut();
+
+        }
+
+
     }
 }

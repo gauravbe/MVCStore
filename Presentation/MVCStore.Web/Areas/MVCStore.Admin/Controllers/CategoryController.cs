@@ -22,50 +22,70 @@ namespace MVCStore.Admin.Controllers
         }
       
 
-        public ActionResult Index(string searchWord, GridSortOptions gridSortOptions, int? page)
-        {
-            var pagedViewModel = new PagedViewModel<Category>
-            {
-                ViewData = ViewData,
-                Query = _categoryService.FetchCategories().AsQueryable(),
-                GridSortOptions = gridSortOptions,
-                DefaultSortColumn = "Name",
-                Page = page,
-                PageSize = 2,
-            }                      
-            .Setup();
+        //public ActionResult Index(string searchWord, GridSortOptions gridSortOptions, int? page)
+        //{
+        //    var pagedViewModel = new PagedViewModel<Category>
+        //    {
+        //        ViewData = ViewData,
+        //        Query = _categoryService.FetchCategories().AsQueryable(),
+        //        GridSortOptions = gridSortOptions,
+        //        DefaultSortColumn = "Name",
+        //        Page = page,
+        //        PageSize = 2,
+        //    }                      
+        //    .Setup();
 
-            return View(pagedViewModel);
-        }
+        //    return View(pagedViewModel);
+        //}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Add(Category model)
-        {
-            if (ModelState.IsValid)
-            {
-                _categoryService.SaveCategory(model);
-
-                return RedirectToAction("Index", "Category");                
-            }
-            return View("AddCategory");
-        }
-        
-        public ActionResult AddCategory()
+        public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Edit(int id)
+        public JsonResult GetAllCategories(int pageNumber, int pageSize)
         {
-            Category category = _categoryService.GetCategory(id);
-            return View(category);
+
+            List<Category> categories = _categoryService.FetchCategories().OrderBy(o => o.ID).Skip<Category>(pageSize * (pageNumber - 1))
+                .Take<Category>(pageSize).ToList<Category>();
+            return Json(new
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                Data = categories,
+                RecordCount = _categoryService.FetchCategories().Count<Category>()
+            }, JsonRequestBehavior.AllowGet);            
+        }
+        
+        //** APPROACH 1 **//        
+        //[HttpPost]
+        //public ActionResult Add([JsonBinder] Category model)
+        //{
+        //    _categoryService.SaveCategory(model);
+        //    return RedirectToAction("Index", "Category");            
+        //}
+
+        public JsonResult Add(Category model)
+        {
+            _categoryService.SaveCategory(model);
+            return Json(model, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Delete(int id)
+        public JsonResult Update(Category model)
+        {
+            _categoryService.SaveCategory(model);
+            return Json(_categoryService.FetchCategories(), JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult AddCategory()
+        {
+            return View();
+        }        
+
+        public JsonResult Delete(int id)
         {
             _categoryService.Delete(id);
-            return RedirectToAction("Index", "Category");
+            return Json(new { Status = true }, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Details(int id)

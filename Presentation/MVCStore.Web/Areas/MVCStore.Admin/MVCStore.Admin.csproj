@@ -140,6 +140,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\JsonModelBinder.cs" />
     <Compile Include="Models\PagedViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -408,6 +409,7 @@
     <Content Include="Contents\ckeditor\styles.js" />
     <Content Include="Contents\CSS\custom.css" />
     <Content Include="Contents\CSS\font-awesome.css" />
+    <Content Include="Contents\CSS\KoGrid.css" />
     <Content Include="Contents\CSS\site.css" />
     <Content Include="Contents\font-awesome\fonts\fontawesome-webfontba72.svg" />
     <Content Include="Contents\img\1.png" />
@@ -417,6 +419,7 @@
     <Content Include="Contents\img\arrow_down.png" />
     <Content Include="Contents\img\arrow_up.png" />
     <Content Include="Contents\img\find_user.png" />
+    <Content Include="Contents\Script\CategoryViewModel.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -450,6 +453,10 @@
     <ProjectReference Include="..\..\..\..\Libraries\MVCStore.Services\MVCStore.Services.csproj">
       <Project>{b829fe87-e827-4c4b-8282-4abe2d0737cc}</Project>
       <Name>MVCStore.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MVCStore.Framework\MVCStore.Framework.csproj">
+      <Project>{f42e54ce-f5e2-4327-9b89-be06de8a552a}</Project>
+      <Name>MVCStore.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -509,6 +516,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Product\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

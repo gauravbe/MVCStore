@@ -8,13 +8,18 @@ namespace MVCStore.Admin.Models
 {
     public class LoginModel
     {
-        [Required]
+
         [Display(Name = "User name")]
+        [Required(ErrorMessage = "Please enter an email address to log in.")]
+        [StringLength(64, ErrorMessage = "Invalid email address. Please try again.")]
         public string UserName { get; set; }
 
-        [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
+        [Required(ErrorMessage = "Please enter a Password")]
         public string Password { get; set; }
+
+        [Display(Name = "Remember me?")]
+        public bool RememberMe { get; set; }
     }
 }

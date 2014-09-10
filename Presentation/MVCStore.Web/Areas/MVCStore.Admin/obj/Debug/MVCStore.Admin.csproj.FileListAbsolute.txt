@@ -76,3 +76,5 @@ C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\ob
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\Microsoft.Web.Mvc.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MvcContrib.dll
 C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MvcContrib.xml
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MVCStore.Framework.dll
+C:\Technical\MVCStore\MVCStore\Presentation\MVCStore.Web\Areas\MVCStore.Admin\bin\MVCStore.Framework.pdb

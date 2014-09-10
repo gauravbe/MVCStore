@@ -24,9 +24,11 @@ namespace MVCStore.Services.Catalog
             product.ImageData = ConvertToBytes(file);
             var productData = new Product
             {
+                ProductID =  product.ProductID,
                 Name = product.Name,
                 Description = product.Description,
                 Price = product.Price,
+                CategoryId = product.CategoryId,
                 ImageData = product.ImageData
             };
 

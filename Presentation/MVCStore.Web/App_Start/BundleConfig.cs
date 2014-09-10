@@ -27,6 +27,12 @@ namespace MVCStore.Admin.App_Start
                     "~/content/scripts/bootstrap.js"             
                     ));
 
+            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
+                    "~/content/scripts/knockout-3.2.0.js",
+                    "~/content/scripts/knockout.mapping-latest.js",
+                    "~/Content/Scripts/knockout.validation.js"
+                    ));
+
             bundles.Add(new StyleBundle("~/content/css/bootstrap").Include(
                 "~/content/css/bootstrap/bootstrap.css",
                 "~/content/css/bootstrap/bootstrap-theme.css"

@@ -1,4 +1,6 @@
-﻿
+﻿label { display: block; }
+.validationMessage { color: Red; }
+.customMessage { color: Orange; }
 
 .bootstrap-admin-content-title h1 {
     font-size: 45px;
@@ -478,5 +480,19 @@ fieldset[disabled] .btn-metis-6.active {
   color: #C52F61;
 }
 
+gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 600px
+}
 
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.row {
+    margin-top: 80px;
+}
 /*endof statistics*/

@@ -21,19 +21,26 @@
                         </div>
                         <div class="form-group">
                             <label>Price: </label>
-                            @Model.Price
+                            $@Model.Price
                         </div>
                         <div class="form-group">
                             <label>Category Name: </label>
-                            @Model.CategoryId
+                            @ViewBag.CategoryName
                         </div>
                         <div class="form-group">
                             <label>Image: </label>
-                            <img src="/Admin/Product/RetrieveImage/@Model.ProductID" alt="" height=100 width=200 />
+                            @if (Model != null && Model.ImageData != null && Model.ImageData.Length > 0)
+                            {
+                                 <img src="/Admin/Product/RetrieveImage/@Model.ProductID" alt="" height=100 width=200 />
+                            }
+                            else
+                            { 
+                                @("N/A")
+                            }                           
                         </div>
                         <div class="form-group">
                             <label>Description: </label>
-                           @Html.Raw(@Model.Description)
+                            @Html.Raw(@Model.Description)
                         </div>
                     </div>
                 </div>

@@ -160,6 +160,11 @@
     <Content Include="Content\scripts\jquery.validate.min.js" />
     <Content Include="Content\scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Content\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\scripts\knockout-3.2.0.debug.js" />
+    <Content Include="Content\scripts\knockout-3.2.0.js" />
+    <Content Include="Content\scripts\knockout.mapping-latest.js" />
+    <Content Include="Content\scripts\koGrid-2.1.1.debug.js" />
+    <Content Include="Content\scripts\koGrid-2.1.1.js" />
     <Content Include="Content\scripts\MicrosoftAjax.debug.js" />
     <Content Include="Content\scripts\MicrosoftAjax.js" />
     <Content Include="Content\scripts\MicrosoftMvcAjax.debug.js" />
@@ -168,7 +173,14 @@
     <Content Include="Content\scripts\MicrosoftMvcValidation.js" />
     <Content Include="Content\scripts\modernizr-2.6.2.js" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Scripts\knockout-3.2.0.debug.js" />
+    <Content Include="Scripts\knockout-3.2.0.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

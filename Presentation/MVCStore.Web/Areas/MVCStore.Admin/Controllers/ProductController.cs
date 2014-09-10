@@ -16,9 +16,12 @@ namespace MVCStore.Admin.Controllers
         //
         // GET: /Category/
         private readonly IProductService _productService;
-        public ProductController(IProductService productService)
+        private readonly ICategoryService _categoryService;
+        public ProductController(IProductService productService, ICategoryService categoryService)
         {
             this._productService = productService;
+            this._categoryService = categoryService;
+
         }
 
 
@@ -49,17 +52,23 @@ namespace MVCStore.Admin.Controllers
 
                 return RedirectToAction("Index", "Product");
             }
+            IEnumerable<Category> categories = _categoryService.FetchCategories();
+            ViewBag.CategoryId = new SelectList(categories, "ID", "Name");
             return View("AddProduct");
         }
 
         public ActionResult AddProduct()
         {
+            IEnumerable<Category> categories = _categoryService.FetchCategories();
+            ViewBag.CategoryId = new SelectList(categories, "ID", "Name");
             return View();
         }
 
         public ActionResult Edit(int id)
         {
             Product product = _productService.GetProduct(id);
+            IEnumerable<Category> categories = _categoryService.FetchCategories();
+            ViewBag.CategoryId = new SelectList(categories, "ID", "Name", product.CategoryId);
             return View(product);
         }
 
@@ -70,8 +79,11 @@ namespace MVCStore.Admin.Controllers
         }
 
         public ActionResult Details(int id)
-        {
+        {            
             Product product = _productService.GetProduct(id);
+
+            string name = _categoryService.GetCategory(product.CategoryId).Name;
+            ViewBag.CategoryName = name;
             return View(product);
         }
 
