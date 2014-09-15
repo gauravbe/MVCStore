@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script>
+    $(function () { $("#tabs").tabs(); });
+
+</script>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Customer</a></li>
+        <li><a href="#tabs-2">Roles</a></li>        
+    </ul>
+    <div id="tabs-1">
+        <p>@Html.Partial("CustomerList")</p>
+    </div>
+    <div id="tabs-2">
+        <p>@{ Html.RenderAction("RoleList", "Customer");}</p>
+    </div>    
+</div>

@@ -12,7 +12,8 @@ namespace MVCStore.Admin.App_Start
                         "~/content/scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                        "~/content/scripts/jquery-ui-{version}.js"));
+                        "~/content/scripts/jquery-ui-{version}.js",
+                        "~/content/scripts/jquery.ui-tabs.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/content/scripts/jquery.unobtrusive*",
@@ -36,7 +37,11 @@ namespace MVCStore.Admin.App_Start
             bundles.Add(new StyleBundle("~/content/css/bootstrap").Include(
                 "~/content/css/bootstrap/bootstrap.css",
                 "~/content/css/bootstrap/bootstrap-theme.css"
-                ));          
+                ));
+
+            bundles.Add(new StyleBundle("~/content/css/jquery").Include(
+                "~/content/css/jquery-ui.css"
+                )); 
 
         }
     }

@@ -20,5 +20,15 @@ namespace MVCStore.Services.Authentication
         {            
             return _aspnetMembershipService.ValidateUser(userName, password);
         }
+
+        public string Createuser(string userName, string password, string email, string passwordQuestion, string passwordAnswer)
+        {
+            return _aspnetMembershipService.CreateUser(userName, password, email, passwordQuestion, passwordAnswer);
+        }
+
+        public List<string> GetAllRoles()
+        {
+            return _aspnetMembershipService.GetAllRoles();
+        }
     }
 }

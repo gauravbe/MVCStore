@@ -10,7 +10,8 @@ namespace MVCStore.Core.Authentication
     public interface IMembership
     {
         bool ValidateUser(string userName, string password);
-        MembershipCreateStatus CreateUser(string userName, string password, string email);
+        string CreateUser(string userName, string password, string email, string passwordQuestion, string passwordAnswer);
         bool ChangePassword(string userName, string oldPassword, string newPassword);
+        List<string> GetAllRoles();
     }
 }
