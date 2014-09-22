@@ -1,0 +1,29 @@
+﻿@using MvcContrib.UI.Grid;
+@using MVCStore.Admin.Common
+@model MVCStore.Admin.Models.PagedViewModel<MVCStore.Data.Entities.Customer>
+
+<div class="row">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                User List
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    @Html.Grid(Model.PagedList).Columns(column =>
+                    {
+                        column.For(x => Html.ActionQueryLink(x.Username, "Details", new { id = x.Username })).Named("User Name").InsertAt(0);
+                        column.For(x => x.Email);
+                        column.For(x => x.Question);
+                        column.For(x => x.Answer);
+                        column.For(x => x.IsApproved);
+                        column.For(x => x.IsLockedOut);
+                        column.For(cust => Html.ActionLink("Edit", "Edit", new { id = cust.Username })).Named("Edit").Encode(false);
+                        column.For(cust => Html.ActionLink("delete", "Delete", new { id = cust.Username }, new { @class = "confirmDialog" })).Named("Delete").Encode(false);
+                    }).Sort(Model.GridSortOptions).Attributes(@class => "table table-striped")
+                    @{Html.RenderPartial("Pager", Model.PagedList);}
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

@@ -13,5 +13,6 @@ namespace MVCStore.Core.Authentication
         string CreateUser(string userName, string password, string email, string passwordQuestion, string passwordAnswer);
         bool ChangePassword(string userName, string oldPassword, string newPassword);
         List<string> GetAllRoles();
+        MembershipUserCollection GetAllUsers();
     }
 }

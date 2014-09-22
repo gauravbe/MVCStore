@@ -525,10 +525,13 @@
     <Content Include="Views\Customer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Customer\CustomerList.cshtml" />
+    <Content Include="Views\Customer\AddCustomer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Customer\RoleList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Customer\ListUsers.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

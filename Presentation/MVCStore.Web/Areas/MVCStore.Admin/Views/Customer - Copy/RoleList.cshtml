@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MVCStore.Data.Entities.CustomerRole>
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Role List
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <div class="form-group">
+                                @foreach (var item in Model)
+                                {
+                                    <li>
+                                        @Html.CheckBox("roleType", false, new
+                                    {
+                                        value = item.RoleName
+                                    })
+                            <label>@item.RoleName</label>
+                                    </li>
+                                }
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Elements -->
+    </div>
+</div>

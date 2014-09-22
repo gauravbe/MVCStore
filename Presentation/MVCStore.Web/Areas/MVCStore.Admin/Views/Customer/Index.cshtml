@@ -1,22 +1,40 @@
-﻿@{
-    ViewBag.Title = "Index";
+﻿@model MVCStore.Data.Entities.Customer
+@{
+    ViewBag.Title = "List Users";
     Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
 <script>
-    $(function () { $("#tabs").tabs(); });
-
+    //$(function () { $("#tabs").tabs(); });
+    var selected_tab = 1;
+    $(function () {
+        var tabs = $("#tabs").tabs({
+            select: function (e, i) {
+                selected_tab = i.index;
+            }
+        });
+        selected_tab = $("[id$=SelectedIndex]").val() != "" ? parseInt($("[id$=SelectedIndex]").val()) : 0;
+        tabs.tabs('select', selected_tab);
+        $("form").submit(function () {
+            $("[id$=SelectedIndex]").val(selected_tab);
+        });
+    });
+    
 </script>
 
 <div id="tabs">
     <ul>
-        <li><a href="#tabs-1">Customer</a></li>
-        <li><a href="#tabs-2">Roles</a></li>        
+        <li><a href="#tabs-1">Customer List</a></li>
+        <li><a href="#tabs-2">Roles</a></li>
+        <li><a href="#tabs-3">Add Customer</a></li>         
     </ul>
     <div id="tabs-1">
-        <p>@Html.Partial("CustomerList")</p>
+        <p>@{ Html.RenderAction("ListUsers"); }</p>
     </div>
     <div id="tabs-2">
         <p>@{ Html.RenderAction("RoleList", "Customer");}</p>
-    </div>    
+    </div>
+    <div id="tabs-3">
+        <p>@{ Html.RenderPartial("AddCustomer", Model);}</p>
+    </div>     
 </div>

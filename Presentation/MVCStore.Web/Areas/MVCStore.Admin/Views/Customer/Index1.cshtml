@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "List Users";
+    Layout = "~/Areas/MVCStore.Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    .ui-helper-minheight {
+        min-height: 200px;
+        overflow: hidden;
+    }
+</style>
+
+
+
+<div id="fileContainer">
+    <div id="tabstrip">
+        <ul>
+            <li>List Customers</li>
+            <li>Add Customer</li>
+            <li>List Roles</li>
+        </ul>
+    </div>
+        <div class="ui-helper-minheight">
+            <div data-type="container">
+                @{ Html.RenderAction("ListUsers", "Customer"); }
+            </div>
+        </div>
+        <div class="ui-helper-minheight">
+            <div data-type="container">
+                @{ Html.RenderAction("RoleList", "Customer"); }
+            </div>
+        </div>
+        <div class="ui-helper-minheight">
+            <div data-type="container">
+                @{ Html.RenderAction("AddCustomer", "Customer"); }
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tabController = function () {
+        var tabStrip,
+            fileContainer;
+        return {
+            init: function ($, disableTabs) {
+                tabStrip = $("#tabstrip").kendoTabStrip().data("kendoTabStrip");
+                tabStrip.select(0);
+                fileContainer = $("#fileContainer");
+                fileContainer.show();
+            },
+            selectIndex: function (index) {
+                tabStrip.select(index);
+            }
+        };
+    }();
+
+    function setIndex(index) {
+        tabController.selectIndex(index);
+    }
+
+    $(document).ready(function () {        
+        var disableTab = false;        
+        tabController.init($, disableTab);
+
+    });
+
+
+</script>

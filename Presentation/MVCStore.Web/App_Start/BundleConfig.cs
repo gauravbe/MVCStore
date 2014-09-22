@@ -34,6 +34,10 @@ namespace MVCStore.Admin.App_Start
                     "~/Content/Scripts/knockout.validation.js"
                     ));
 
+            bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
+                "~/content/Scripts/kendo/2014.1.318/kendo.core.min.js",
+                "~/content/Scripts/kendo/2014.1.318/kendo.web.min.js"));
+
             bundles.Add(new StyleBundle("~/content/css/bootstrap").Include(
                 "~/content/css/bootstrap/bootstrap.css",
                 "~/content/css/bootstrap/bootstrap-theme.css"
@@ -41,7 +45,12 @@ namespace MVCStore.Admin.App_Start
 
             bundles.Add(new StyleBundle("~/content/css/jquery").Include(
                 "~/content/css/jquery-ui.css"
-                )); 
+                ));
+
+            bundles.Add(new StyleBundle("~/content/css/kendo").Include(
+                "~/content/css/kendo/2014.1.318/kendo.common.*",
+                "~/content/css/kendo/2014.1.318/kendo.default.*"));
+
 
         }
     }

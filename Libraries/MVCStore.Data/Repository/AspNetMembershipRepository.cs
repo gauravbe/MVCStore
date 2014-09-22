@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Security;
 using MVCStore.Core.Authentication;
+using MVCStore.Data.Entities;
 
 namespace MVCStore.Data
 {
@@ -30,7 +31,12 @@ namespace MVCStore.Data
             }
             return null;
         }
-        
+
+        public MembershipUserCollection GetAllUsers()
+        {
+            return Membership.GetAllUsers();           
+        }
+
         public bool ChangePassword(string userName, string oldPassword, string newPassword)
         {
             throw new NotImplementedException();
